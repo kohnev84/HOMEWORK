@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="кнопка"><br>
+    <input type="checkbox" name="checkbox">чай<br>
+    <input type="checkbox" name="checkbox2">кофе<br>
+    <input type="file" accept="png" accesskey="s"required multiple><br>
+    <input type="hidden"><br>
+    <input type="image" src="./img/118183_zamek_wzgorze_morze.jpg" style="width: 350px; height: 350px;" alt="sorry"><br>
+    <input type="password" autocomplete="on" autofocus maxlength="10"><br>
+    <input type="radio" name="checkbox" value="var1" checked>да<br>
+    <input type="radio" name="checkbox" value="var2">нет<br>
+    <input type="reset"><br>
+    <input type="submit" formnovalidate value="отправить без кодирования" disabled><br>
+    <input type="text" pattern="[A-Z]"><br>
+    <form id="data"></form>
+    <input placeholder="Ваше имя" name="user" form="data">
+    <input type="submit" value="отправить форму" form="data" formaction="handler.php" formenctype="application/x-www-form-urlencoded" formmethod="post" formtarget="_blank">
+    <form action="handler.php">
+        <input list="game_genres">
+        <datalist id="game_genres">
+        <option value="RPG">RPG</option>
+        <option value="shooter">shooter</option>
+        <option value="strategy">strategy</option>
+        <option value="race">race</option>
+        <option value="simulators">simulators</option>
+        </datalist>
+    </form>
+    <form action="handler.php">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui dolorum adipisci ullam eligendi iste eaque soluta, nostrum voluptate a ad. Magni suscipit obcaecati dolor nihil voluptatem quidem possimus beatae.</p>
+        <input type="date" min="2022-07-11" max="2022-07-13" value="2022-07-11">
+    </form>
+    <p>Сколько вам лет?</p>
+    <input type="number" min="1" value="0">
+    <form action="handler.php">
+    <p><input type="text" name="comment" size="20" value="Текст не может быть изменен" readonly></p>
+</form>
+<form action="handler.php">
+    <input type="range" min="0" max="10" step="2">
+</form>
+<input tabindex="5">
+</body>
+</html>
