@@ -1,0 +1,123 @@
+@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+
+
+.main_list{
+    display: flex;
+    justify-content:center;
+    list-style: none;
+    background-image: linear-gradient(#fff,lightgreen);
+    
+
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+}
+
+.container{
+    margin: 25px;
+    width: 900px;
+    height: 500px;
+    background: grey;
+    display: flex;
+    justify-content:space-around;
+}
+
+.sub_container{
+    width: 200px;
+    height: 300px;
+    margin-top: 80px;
+    background-color: white;
+}
+
+.mini_container_1{
+    width: 200px;
+    height: 50px;;
+    background-color: #97b8b5;
+}
+
+.mini_container_2{
+    width: 200px;
+    height: 50px;;
+    background-color: #97b8b5;
+    position: absolute;
+    bottom: 4.5px;
+}
+
+.mini_container_3{
+    width: 50px;
+    height: 200px;
+    background-color:antiquewhite;
+    position: absolute;
+    left: 115px;
+}
+
+.mini_container_4{
+    width: 200px;
+    height: 50px;;
+    background-color: #97b8b5;
+}
+.mini_container_5{
+    width: 50px;
+    height: 250px;;
+    background-color: rgb(224, 250, 215);
+    position: absolute;
+    left: 340px;
+}
+
+.mini_container_6{
+    width: 200px;
+    height: 50px;;
+    background-color: #97b8b5;
+}
+
+.mini_container_7{
+    width: 50px;
+    height: 75px;;
+    background-color: rgb(199, 137, 114);
+    
+}
+
+.mini_container_8{
+    width: 200px;
+    height: 50px;;
+    background-color: #97b8b5;
+    position: absolute;
+    bottom: 129px;
+}
+
+.mini_container_9{
+    width: 50px;
+    height: 75px;
+    background-color: rgb(199, 137, 114);
+    position: absolute;
+    bottom: 54px;
+}
+
+.mini_container_10{
+    width: 200px;
+    height: 50px;;
+    background-color: #97b8b5;
+    position: absolute;
+    bottom: 4.5px;
+}
+
+.mini_container_11{
+    width: 50px;
+    height: 300px;
+    background-color: rgb(199, 137, 114);
+}
+
+.mini_container_12{
+    float: left; 
+    height: 200px; 
+    width: 200px;
+    position: absolute;
+    bottom: 55px;
+    left: 762px; 
+    clip-path: circle(50% at 0 50%); 
+    background-color: rgb(199, 137, 114);
+
+}
