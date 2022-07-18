@@ -1,0 +1,94 @@
+#main p{
+    font-size: 25px;
+}
+
+#main_2 > p {
+    font-size: 50px;
+    color: red;
+}
+
+#main_3 h1+p{
+    color: blueviolet;
+    font-style: italic;
+}
+#main_4 h1~p{
+    color: brown;
+    font-style: oblique;
+}
+
+.container{
+    width: 400px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.container:hover {
+    background-color: blueviolet;
+}
+
+.field:focus{
+    color: red;
+}
+
+link:visited{
+    color: rgb(46, 154, 46);
+}
+
+.ited{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    margin-top: 40px;
+}
+
+.container_3{
+    width: 450px;
+    height: 200px;
+    background-color: blue;
+    border: 2px solid black;
+    margin: 0 auto;
+   
+}
+
+.container_3:hover{
+    transform: rotate(45deg);
+}
+
+.container_4{
+    width: 450px;
+    height: 200px;
+    background-color: rgb(123, 22, 22);
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.container_4:hover{
+    transform: skewY(30deg);
+}
+
+.container_5{
+    width: 450px;
+    height: 200px;
+    background-color: rgb(163, 10, 176);
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.container_5:hover{
+    transform: scale(2,3);
+}
+
+.container_6{
+    width: 450px;
+    height: 200px;
+    background-color: rgb(112, 227, 11);
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.container_6:hover{
+    transform: scaleX(1.5);
+}
