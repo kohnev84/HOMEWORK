@@ -1,0 +1,87 @@
+.main_container{
+    position: relative;
+    padding: 20px;
+}
+
+.container{
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.title_1{
+    font-size: 7.5rem;
+    margin-top: 75px;
+    margin-left: 165px;
+}
+
+.container_2{
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(19, 221, 130, 0.568);
+    margin: 0 auto;
+    position: absolute;
+    top: 450px;
+    left: 550px;
+}
+.title_2,
+.title_3{
+    font-size: 2.5rem;
+    color: red;
+}
+
+.container_3{
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(230, 9, 127, 0.568);
+    margin: 0 auto;
+    position: absolute;
+    top: 1250px;
+    left: 550px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: rgba(5, 64, 213, 0.673);
+    margin-left: 100px;
+    margin-top: 50px;
+    font-style:italic;
+}
+
+.container_4{
+    width: 850px;
+    height: 600px;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: rgba(17, 149, 237, 0.598);
+}
+
+p.new_paragraph:after{
+    content: "- Новый стих";
+}
+
+p.new_paragraph_2:before{
+    content: "2)";
+}
+
+p:first-letter{
+    font-size: 200%;
+    color: rgb(14, 17, 218);
+}
+
+p::first-line{
+    color: red;
+}
+

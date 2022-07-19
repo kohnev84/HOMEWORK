@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    perspective: 1px;
+    transform-style:preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header{
+    box-sizing: border-box;
+    min-height: 100vh;
+    text-align: center;
+    padding: 10% 0 20%;
+    transform-style:inherit;
+    width: 100vw;
+}
+
+header::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: center;
+    min-height: 100vh;
+    background-image: url(./img/1646290468_1-kartinkin-net-p-krasivie-kosmicheskie-kartinki-1.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    transition: 1s;
+    transform: translateZ(-1px) scale(2);
+}
+
+h1{
+    color: #414A4C;
+    font-family: 'Viaoda Libre', cursive;
+
+}
