@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(./img/gilroy-bold.ttf);
+}
+/* Desktop version */
+@media screen and (max-wight:1445px){
+    
+}
+body{
+    font-family: Gilroy-Bold;
+}
+
+header{
+}
+
+.main_nav{
+    position: relative;
+}
+
+.sub_nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 31.92px;
+    margin-top: 32px;
+    margin-left: 25px;
+}
+
+.element_nav{
+    list-style-type: none;
+    color: #828282;
+    
+}
+
+.nav_line{
+    width: 1000px;
+    position: relative;
+    bottom: 10px;
+    left: 31px;
+}
+
+.name_banner{
+    position:relative;
+    left:262.04px;
+    right: 1070.45px;;
+    top: -12.13px;
+    bottom: 4512.7px;
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+}
+
+.profession{
+    position: relative;
+    left: 47.49%;
+    right: 42.74%;
+    top: 10.85%;
+    bottom: 95.22%;
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #070707;
+}
+
+.foto_1{
+    width: 943.61px;
+    height: 387px;
+    position: absolute;
+    bottom: 175.94px;
+    left: 300px;
+}
+
+.lang{
+    position:relative;
+    left: 85.3%;
+    top: 154px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transform: rotate(-90deg);
+}
+
+.container{
+    width:100%;
+    height: 506px;
+    background-color: #F6F6F6;
+    position: relative;
+    top: 768px;
+}
+
+.about_me{
+    position: relative;
+    left: 0;
+    right: 44.54%;
+    top: 15.66%;
+    bottom: 80.43%;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+}
+
+.topic{
+    position: relative;
+    left: 0;
+    right: 44.54%;
+    top: 15.66%;
+    bottom: 80.43%;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+}

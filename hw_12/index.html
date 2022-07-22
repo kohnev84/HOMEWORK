@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+        }
+     
+        .video_fon{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+        }
+
+        .dark{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255,255,255,0.7);
+            position: fixed;
+        }
+
+        h1{
+            font-family: 'Fira Sans', sans-serif;
+            position: absolute;
+            top: 390px;
+            left: 230px;
+            color: rgb(149, 43, 151);
+            text-align: center;
+        }
+
+        .bth{
+            font-size: 50px;
+            background-color: blue;
+            position: absolute;
+            top: 550px;
+            left: 800px;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+        <video autoplay loop muted class="video_fon">
+            <source src="./video/Falls9.mov" type="video/mp4">
+        </video>
+        <div class="dark"></div>
+    <h1>Я вспоминаю свои мимолетные мгновения в саванне как вкус чашки, наполняемой до краев.</h1>
+    <button class="bth">Кнопка</button>
+</body>
+</html>
