@@ -32,7 +32,7 @@ header{
 }
 
 .nav_line{
-    width: 1000px;
+    width: 1550px;
     position: relative;
     bottom: 10px;
     left: 31px;
@@ -40,7 +40,7 @@ header{
 
 .name_banner{
     position:relative;
-    left:262.04px;
+    left: 200px;
     right: 1070.45px;;
     top: -12.13px;
     bottom: 4512.7px;
