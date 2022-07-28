@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bth">press</button>
+
+    <div class="my-container">
+        <div class="sub_container">1 2 3 4 5</div>
+        <div class="sub_container">6 7 8 9 10</div>
+        <div class="sub_container">11 12 13 14 15</div>
+        <div class="sub_container">16 17 18 19 20</div>
+    </div>
+
+    <div>
+        <h2>hello</h2>
+        <h2>world</h2>
+    </div>
+
+    <div class="my_container_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus totam voluptatum magnam accusamus ex quis ratione cupiditate aliquid veniam quasi praesentium asperiores tempore, eaque consectetur unde laudantium, cumque dolor odio!</div>
+    <script>
+        document.getElementById('bth').onclick = ()=>{
+            console.log("getElementById work")
+        }
+
+        let container = document.getElementsByClassName('my-container')[0];
+        let container_2 = container.getElementsByClassName('sub_container');
+        console.log(container_2.length)
+
+        let welcome = document.getElementsByTagName("h2");
+        console.log(welcome);
+
+        let verse = document.querySelector('.my_container_2');
+        console.log(verse)
+    </script>
+</body>
+</html>

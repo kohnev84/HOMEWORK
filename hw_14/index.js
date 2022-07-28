@@ -1,0 +1,5 @@
+alert("Java")
+alert("Javascript")
+alert("Python")
+alert("C++")
+alert("Pascal")
