@@ -10,7 +10,7 @@
         (arr)=>{
             arr.films.forEach(element => {
                 console.log(element)
-                document.getElementById("container").innerHTML += `<span style="font-size:20px; font-family: 'Yanone Kaffeesatz', sans-serif;"><img style="width: 300px; border:2px solid black; border-radius:5px;" src = "${element.posterUrl}"/> ${element.nameRu} <br>Время ${element.filmLength} <br>Рейтинг ${element.rating} <br>Год выхода ${element.year}<br>`
+                document.getElementById("container").innerHTML += `<span style="font-size:20px; font-family: 'Yanone Kaffeesatz', sans-serif;"><img style="width: 300px; border:2px solid black; border-radius:5px;" src = " ${element.posterUrl}"/><br> ${element.nameRu} <br>Время ${element.filmLength} <br>Рейтинг ${element.rating} <br>Год выхода ${element.year}<br>`
             });
         }
     )
