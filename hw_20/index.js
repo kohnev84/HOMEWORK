@@ -30,3 +30,21 @@
 //      document.getElementById("container").innerHTML += `${numbers}<br>`     
 // }
 
+// for(let i = 0; i < 3;i++){
+//     document.getElementById("container").innerHTML += "*******<br>"
+// }
+
+
+// for(let i = 0; i < 3; i++){
+//     for(let j = 0; j < 7; j++){
+//         document.getElementById("container").innerHTML += "*"
+//     }
+//     document.getElementById("container").innerHTML += "<br>"
+// }
+
+// for(let i = 0; i < 8; i++){
+//     for(let j = 0; j < i; j++){
+//         document.getElementById("container").innerHTML += "*"
+//     }
+//     document.getElementById("container").innerHTML += "<br>"
+// }
