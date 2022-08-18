@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .marker {
+            background-image: url('https://img.icons8.com/color/48/000000/marker.png');
+            background-size: cover;
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Узнай свою Геолокацию</h1>
+    </header>
+    <button id="but">Узнать(результат в консоли)</button>
+
+    <div style='text-align: center;'>
+        <div id='mapNew' style='width: 70%; height: 550px; margin: 0 auto'>
+        </div>
+    </div>
+    <br>
+
+    <script src="./xml2json.js"></script>
+    <script>
+        document.getElementById("but").onclick = () => {
+            navigator.geolocation.getCurrentPosition(async function (geoLocation) {
+                console.log('широта: ', geoLocation.coords.latitude)
+                console.log('долгота: ', geoLocation.coords.longitude)
+
+
+                
+                // const reqComparison = await fetch(
+                //     `https://geocode-maps.yandex.ru/1.x/?apikey=a0f4c97d-641f-4a82-861f-e88cccdb49d0&geocode=${geoLocation.coords.longitude},${geoLocation.coords.latitude}`,
+                //     {
+                //         headers: {
+                //             'Content-Type': 'application/json',
+                //         },
+                //         method: 'GET',
+                //     });
+                // const arrSortUserId = await reqComparison.text();
+
+                // console.log(arrSortUserId)
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", `https://geocode-maps.yandex.ru/1.x/?apikey=a0f4c97d-641f-4a82-861f-e88cccdb49d0&geocode=${geoLocation.coords.longitude},${geoLocation.coords.latitude}`)
+
+                xhr.send();
+
+                xhr.onload = function (){
+                    if (xhr.status == 200){
+                        console.log("WORK")
+                        console.log(xhr.status)
+                        console.log(xhr.response)
+                    }else{
+                        console.log("erorr")
+                    }
+                }
+
+                var x2js = new X2JS();
+                var jsonObj = x2js.xml_str2json(arrSortUserId);
+                console.log('check', jsonObj)
+            })
+        }
+    </script>
+
+
+
+</body>
+
+</html>

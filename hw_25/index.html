@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .marker {
+            background-image: url('https://img.icons8.com/color/48/000000/marker.png');
+            background-size: cover;
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Узнай свою Геолокацию</h1>
+    </header>
+    <button id="but">Узнать(результат в консоли)</button>
+
+    <div style='text-align: center;'>
+        <div id='mapNew' style='width: 70%; height: 550px; margin: 0 auto'>
+        </div>
+    </div>
+    <br>
+    <script>
+        document.getElementById("but").onclick = () => {
+            navigator.geolocation.getCurrentPosition(async function (geoLocation) {
+                console.log('широта: ', geoLocation.coords.latitude)
+                console.log('долгота: ', geoLocation.coords.longitude)
+
+
+                mapboxgl.accessToken = 'pk.eyJ1Ijoia29obmV2ODQiLCJhIjoiY2w2dXJianhmMTRnZjNkbzcycnNrYjQ5OSJ9.N3h3ujXrlpsjLjrlnYORRQ';
+                var mapNew = new mapboxgl.Map({
+                    container: 'mapNew',
+                    // style: 'mapbox://styles/mapbox/light-v10',
+                    style: 'mapbox://styles/mapbox/streets-v9',
+
+                    zoom: 15.3,
+                    center: [geoLocation.coords.longitude, geoLocation.coords.latitude],
+                    pitch: 0,
+                    bearing: 0
+                });
+
+                var marker = new mapboxgl.Marker()
+                    .setLngLat([geoLocation.coords.longitude, geoLocation.coords.latitude])
+                    .addTo(mapNew);
+            })
+        }
+    </script>
+</body>
+
+</html>
