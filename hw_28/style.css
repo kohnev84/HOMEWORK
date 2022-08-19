@@ -1,0 +1,38 @@
+
+
+.main-container{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.timer_block{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.start{
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: lightgreen;
+}
+
+.pause{
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+.reset{
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: red;
+}

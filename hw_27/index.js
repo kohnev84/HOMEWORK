@@ -20,8 +20,7 @@ fetch('https://jsonplaceholder.typicode.com/comments')
 //         headers:{
 //             'Content-Type':'application/json',
 //         },
-//         method:'GET',
-//         body: JSON.stringify("albums")
+//         method:'GET'
 //     });
 //     const result2 = await response3.json();
 //     console.log(result2)
