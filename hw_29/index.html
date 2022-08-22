@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 0 auto;
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <p> <button class="toEnd"> В конец</button> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illo, sapiente rem dignissimos consectetur, ex accusamus ipsa a molestiae at est unde et repudiandae temporibus laboriosam voluptatem! Amet, facilis adipisci.
+      Earum repellendus mollitia inventore, nisi obcaecati aliquid molestiae molestias explicabo, voluptate totam culpa id itaque debitis eos iusto expedita exercitationem? Exercitationem vero corporis ipsam perferendis in sunt atque incidunt voluptatum.
+      Dolorum iusto qui inventore nemo rem eius dolor repellat pariatur voluptatum debitis earum, sit libero, impedit, facere perspiciatis expedita vero nihil provident tempora voluptas necessitatibus doloribus. Alias vitae sed quibusdam.
+      Delectus, eligendi debitis, at harum praesentium non mollitia in laudantium tempora voluptates laborum hic doloremque? Temporibus sapiente enim nemo officiis quisquam, voluptatem odit est commodi magni ipsam eaque incidunt expedita?
+      Impedit atque animi iusto nesciunt accusamus perferendis molestiae, eaque asperiores facilis, quo beatae. Neque, nulla ratione tenetur magnam accusamus amet odit necessitatibus quibusdam. Mollitia magnam, ullam reprehenderit quam rem natus!
+      Est libero ex reprehenderit molestias deleniti ipsam aliquam? Obcaecati corporis iure quod nisi suscipit alias perspiciatis enim ea ab quasi, veritatis magni eaque, velit assumenda provident? Molestiae similique voluptatem rem?
+      Eum, quam? Est voluptates iure labore, ipsa assumenda, esse libero reiciendis aliquam, ut voluptatibus molestiae? Modi dolore quia, ex aliquid, consequuntur, explicabo delectus culpa nisi ipsa doloremque quisquam amet officia!
+      Qui exercitationem aspernatur veniam ducimus natus, odit vitae, quis sint omnis officia quaerat est illum eaque placeat ex labore iste. Earum suscipit voluptatem blanditiis alias quia commodi cumque dignissimos praesentium.
+      Quam dolorem ipsum consequuntur numquam doloribus eius quaerat quas debitis atque voluptates tempora similique a suscipit explicabo possimus architecto delectus, pariatur qui nesciunt necessitatibus, placeat officia, quisquam quod quo? Possimus.
+      Commodi repellat consequuntur id obcaecati optio nesciunt deserunt neque accusamus deleniti inventore nam in, eos delectus aspernatur excepturi eaque sed magnam sequi doloremque odio soluta velit! Debitis corporis nostrum eveniet.
+      Debitis doloremque omnis eum temporibus inventore cumque sed tenetur illum laborum, error itaque sit impedit accusantium! Officiis nulla, officia maiores corrupti molestias id veritatis similique, odio quasi eos facere dolorum.
+      Deleniti facilis repellat laborum reiciendis ducimus error dolorem voluptatibus dolores magnam impedit nobis sapiente obcaecati nesciunt, ipsa porro fugit nulla. Earum non laudantium molestias sequi fugit dicta! Error, maiores ex?
+      Veritatis excepturi sunt quam praesentium facilis sequi nam perspiciatis, error esse ducimus harum, quisquam repudiandae laborum? Iusto, corporis inventore et reiciendis voluptas sed in tempore facere vel enim iure sit.
+      Esse quos eligendi possimus vero eaque enim, voluptas quam laborum reprehenderit veritatis. Ut dolor nemo nostrum quas mollitia tempore debitis nesciunt, sunt, tempora consequatur veritatis qui tenetur, rerum similique facere.
+      Aut fuga aspernatur eius assumenda quis, aliquam repudiandae natus error esse et veritatis doloremque distinctio ad a asperiores harum provident eveniet quidem? Non illo enim odit earum laudantium cum dolore?
+      Pariatur possimus officiis repellat asperiores libero debitis, minima consequuntur similique eaque! Cupiditate sequi blanditiis doloremque ducimus perspiciatis qui architecto, dolore quia? Dolore facere culpa amet esse cum officia, molestiae natus.
+      Consequuntur corrupti obcaecati nulla delectus magni dolor aliquam at numquam perspiciatis, praesentium pariatur porro illo! Eos suscipit at quam consequuntur accusantium ducimus officia quisquam exercitationem, deleniti optio sunt maxime impedit.
+      Sapiente nam voluptatum omnis minima dolore. Neque doloribus ipsa porro odit numquam vel in, recusandae commodi, provident iusto ducimus vero enim, labore fugiat molestiae ratione suscipit dolorem minus dicta esse!
+      Laborum nulla debitis, expedita laudantium ipsa perferendis? Ullam provident explicabo corrupti natus porro aspernatur, quisquam obcaecati voluptatum suscipit! Dicta earum adipisci beatae modi sequi rem, veniam eos assumenda non a?
+      Velitminus nesciunt soluta rerum neque eius, sint perspiciatis iusto atque qui amet labore debitis nostrum itaque excepturi incidunt harum, exercitationem praesentium nisi aperiam tenetur et? Porro, earum deserunt. Quidem?</p>
+      <button class ="toBeggin" >В начало</button>
+      <style>
+        #btnTop{
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: #3dd;
+            font-size: 30px;
+            bottom: 100px;
+            right: 100px;
+            border-radius: 100%;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+      </style>
+    <div id="btnTop">Up</div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset >- document.body.clientHeight / 4) {
+                btnTop.style.opacity = 1;
+            }else {
+                btnTop.style.opacity = 0
+            } 
+        });
+
+        // btnTop.onclick = () => {
+        //     window.scrollTo(0,0)
+        // }
+
+        // btnTop.onclick = () => {
+        //     window.scrollBy(0,5)
+        // }
+
+
+       let down = document.querySelector('.toEnd');
+       let up = document.querySelector('.toBeggin');
+    
+       function scrollClick (){
+        up.scrollIntoView({block: "center", behavior: "smooth"});
+       }
+        
+       down.addEventListener('click', scrollClick);
+
+       function scrollClickBeggin (){
+        down.scrollIntoView({block: "center",behavior: "smooth"});
+       }
+
+       up.addEventListener('click', scrollClickBeggin);
+    </script>
+</body>
+</html>
