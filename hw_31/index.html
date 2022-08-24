@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(lastName, firstName,age,department,salary) {
+                this.lastName = lastName;
+                this.firstName = firstName;
+                this.age = age;
+                this.department = department;
+                this.salary = salary;
+            }
+        }
+
+        const user1 = new Person('Ivanovich', 'Vasily', 34, 'Middle-Frontend-Developer', 158000);
+        const user2 = new Person('Viktorovich', 'Mikhail', 19, 'Junior-Backend-Developer', 58000);
+        const user3 = new Person('Olegovich', 'Peter', 49, 'Teamlead', 375000);
+        const user4 = new Person('Ivanovna', 'Maria', 22, 'Senior-Fullseak-Developer', 258000);
+        const user5 = new Person('Shkredova', 'Alexandra', 24, 'middle-Java-Developer', 188000);
+      
+        console.log(user1, user2, user3, user4, user5)
+
+        class Person2 {
+            constructor(name,age) {
+                this.name = name;
+                this.age = age;
+            }
+            celebrateBirthday(age) {
+                this.age = age;
+            }
+        }
+
+        const user6 = new Person2 ("Ivan", 20);
+        user6.celebrateBirthday(21)
+        console.log(user6)
+    </script>
+</body>
+</html>
