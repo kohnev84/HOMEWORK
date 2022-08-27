@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container{
+            display: flex;
+        }
+
+        .element{
+            border: 2px solid rgb(18, 154, 172);
+            width: 306px;
+            margin: 30px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow:0 0 10px rgba(0, 0, 0, 0.5) ;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <a href="./basket.html">Корзина</a>
+    <!-- <button data-name="RTX 3080ti" data-price="130000" id="but">Купить</button>
+    <script>
+       but.onclick = (e) => {
+        console.log(e.target.dataset)
+        console.log(e.target.dataset.name)
+        console.log(e.target.dataset.price)
+       }
+    </script> -->
+
+    <div id="container">
+
+    </div>
+    <script>
+        let arrVideocard = [
+            {
+               name:'RTX3080ti',
+               price:'130000',
+               urlImage: 'https://www.hardwareluxx.ru/images/cdn01/B7EDC90386054046BC724088C5EAB040/img/6E54A833D4BD4D4D8FB303C223A23D9E/Gigabyte-GeForceRTX3080Ti-Eagle-01_6E54A833D4BD4D4D8FB303C223A23D9E.jpg'
+            },
+            {
+               name:'RTX2080ti',
+               price:'100000',
+               urlImage: 'https://avatars.mds.yandex.net/get-mpic/4944925/img_id3058332996864784602.png/orig'
+            },
+            {
+               name:'GTX1660super',
+               price:'250000',
+               urlImage: 'https://www.techall.ru/image/cache/pimg/3661-1200x800.jpg'
+            },
+            {
+               name:'GTX1080ti',
+               price:'35000',
+               urlImage: 'https://avatars.mds.yandex.net/get-mpic/4409630/img_id8255972083208337062.jpeg/orig'
+            },
+            {
+               name:'GTX1050ti',
+               price:'13000',
+               urlImage: 'https://kast18.ru/wp-content/uploads/productimg/1509031.jpg'
+            },
+        ]
+
+        for (let i = 0; i < arrVideocard.length; i++) {
+            container.innerHTML += `
+        <div class="element">
+            <img width='300px' height='200px' src="${arrVideocard[i].urlImage}" alt="">
+            <p>${arrVideocard[i].name}</p>
+            <p>${arrVideocard[i].price}</p>
+            <button class="but" data-name="${arrVideocard[i].name}" data-price="${arrVideocard[i].price}">Купить</button>
+         </div>
+         `
+        
+    }
+
+    let arrChooseVideocard = []
+    container.onclick = (e)=>{
+        console.log(e.target.className)
+        if(e.target.className === 'but'){
+            console.log(e.target.dataset)
+            console.log(e.target.dataset.name)
+            console.log(e.target.dataset.price)
+
+            let obj = {
+                name: e.target.dataset.name,
+                price: e.target.dataset.price
+            }
+            
+            arrChooseVideocard.push(obj)
+        }
+
+        localStorage.setItem('arrChooseVideocard', JSON.stringify(arrChooseVideocard));
+    }
+    </script>
+</body>
+</html>
